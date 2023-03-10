@@ -12,7 +12,7 @@
     "footer footer footer";
   width: 100vw;
   height: 100%;
-  background-image: linear-gradient(gray, rgba(4, 4, 119, 0.758));
+  background-image: linear-gradient(red, rgb(0, 0, 0));
 }
 
 .containerParts {
@@ -45,9 +45,12 @@
   left: 0;
   top: 0;
   display: grid;
+  grid-template-areas:
+    "navbar navbar navbar"
+    "video video video";
   width: 100vw;
   height: 100vh;
-  background-color: rgba(165, 5, 5, 0.767);
+  background-image: radial-gradient(red, black);
 }
 
 /* Navbar */
@@ -95,8 +98,10 @@ nav ul li a {
   justify-self: center;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  color: rgb(233, 3, 3);
-  text-shadow: 2px 2px black;
+  color: rgb(0, 0, 0);
+  height: 20vh;
+  text-shadow: 2px 2px rgb(101, 101, 101);
+  text-size-adjust: inherit;
 }
 
 /* Buttons */
@@ -150,7 +155,7 @@ nav ul li a {
   width: 45vw;
   position: relative;
   top: 10vh;
-  text-shadow: 2px rgba(0, 0, 0, 0.729);
+  text-shadow: black;
 }
 
 #gatePic {
@@ -167,4 +172,12 @@ nav ul li a {
   height: 45vh;
   grid-area: lower3;
   box-shadow: 5px 5px rgba(255, 0, 0, 0.479);
+}
+
+/* Video */
+
+.video {
+  grid-area: video;
+  display: flex;
+  justify-content: center;
 }
